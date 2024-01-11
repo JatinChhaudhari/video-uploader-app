@@ -11,7 +11,11 @@ dotenv.config();
 const PORT = process.env.PORT || 8000;
 
 //middlewares
-app.use(cors());
+app.use(cors(
+    origin: ["https://deploy-mern-lwhq.vercel.app"],
+    methods: ["POST","GET","DELETE"],
+    credentials: true
+));
 app.use(express.json())
 
 //Routes
