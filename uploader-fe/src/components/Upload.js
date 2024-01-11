@@ -36,7 +36,7 @@ const Upload = () => {
             formData.append('description', e.target.description.value)
             formData.append('video', e.target.video.files[0]);
 
-            const res = await fetch('video-uploader-api.vercel.app/upload', {
+            const res = await fetch('https://video-uploader-api.vercel.app/upload', {
                 method: 'POST',
                 body: formData
             })
