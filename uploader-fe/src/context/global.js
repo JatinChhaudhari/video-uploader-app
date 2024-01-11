@@ -33,7 +33,7 @@ const reducer = (state, action) => {
 }
 
 export const GlobalProvider = ({children}) => {
-
+    fetch.defaults.withCredentials = true;
     const initialState = {
         videos: [],
         loading: false
