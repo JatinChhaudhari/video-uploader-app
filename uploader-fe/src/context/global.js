@@ -8,6 +8,7 @@ const SET_VIDEOS = 'SET_VIDEOS'
 const SET_SELECTED_VIDEO = 'SET_SELECTED_VIDEO'
 
 const reducer = (state, action) => {
+    fetch.defaults.withCredentials = true;
     switch(action.type){
         case LOADING:
             return {...state, loading: true}
