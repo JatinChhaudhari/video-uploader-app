@@ -19,7 +19,7 @@ const reducer = (state, action) => {
                     ...action.payload.map((video) => {
                         return{
                             ...video,
-                            videoUrl: `http://localhost:8000/public/videos/${video.filename}`
+                            videoUrl: `video-uploader-api.vercel.app/public/videos/${video.filename}`
                         }
                     })
                 ]
@@ -43,7 +43,7 @@ export const GlobalProvider = ({children}) => {
     //get videos
     const getAllVideos = async () => {
         try {
-            const res = await fetch('http://localHost:8000/videos');
+            const res = await fetch('video-uploader-api.vercel.app/videos');
             const data = await res.json()
 
             dispatch({type: SET_VIDEOS, payload: data.videos})
