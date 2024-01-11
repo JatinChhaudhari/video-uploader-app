@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 8000;
 
 //middlewares
 app.use(cors(
-    origin: ["https://deploy-mern-lwhq.vercel.app"],
+    origin: ["https://video-uploader-app-frontend.vercel.app/"],
     methods: ["POST","GET","DELETE"],
     credentials: true
 ));
