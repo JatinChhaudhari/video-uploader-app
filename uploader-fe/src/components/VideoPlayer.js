@@ -63,7 +63,7 @@ const VideoPlayer = () => {
     //get videos
     const deleteVideo = async () => {
         try {
-            const res = await fetch('http://localHost:8000/delVideo/'+ id,{
+            const res = await fetch('video-uploader-api.vercel.app/delVideo/'+ id,{
                 method: 'DELETE',
             });
         } catch (error) {
