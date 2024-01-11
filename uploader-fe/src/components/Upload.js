@@ -10,7 +10,6 @@ const Upload = () => {
     const [description, setDescription] = React.useState('');
     const [label, setLabel] = React.useState('Upload your video...');
     const [loading, setLoading] = React.useState(false);
-    fetch.defaults.withCredentials = true;
 
     const {getAllVideos} = useGlobalContext()
 
