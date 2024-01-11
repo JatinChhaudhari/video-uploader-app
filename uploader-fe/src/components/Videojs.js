@@ -1,6 +1,6 @@
 import React from 'react';
 // import videojs from 'video.js';
-import 'video.js/dist/video-js.css';
+// import 'video.js/dist/video-js.css';
 
 export const VideoJS = (props) => {
     const videojs = window.videojs;
