@@ -36,12 +36,11 @@ const Upload = () => {
             formData.append('description', e.target.description.value)
             formData.append('video', e.target.video.files[0]);
 
-            const res = await fetch('http://localhost:8000/upload', {
+            const res = await fetch('video-uploader-api.vercel.app/upload', {
                 method: 'POST',
                 body: formData
             })
 
-            console.log(res)
         }else{
             alert('Add Title: Title is Required...')
         }
