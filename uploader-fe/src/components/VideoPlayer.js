@@ -12,7 +12,6 @@ const VideoPlayer = () => {
     const video = videos.find((vid)=> {
     return vid._id === id
     })
-    fetch.defaults.withCredentials = true;
 
     //refs
     const videoConRef = useRef(null); 
