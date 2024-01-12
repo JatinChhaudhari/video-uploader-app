@@ -32,3 +32,5 @@ const server = () => {
 }
 
 server();
+
+export default app;
